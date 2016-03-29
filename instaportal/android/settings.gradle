@@ -1,0 +1,3 @@
+rootProject.name = 'instaportal'
+
+include ':app'
