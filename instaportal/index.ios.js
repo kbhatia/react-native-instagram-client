@@ -11,6 +11,10 @@ import React, {
   StyleSheet,
   Text,
   View,
+  TouchableOpacity,
+  SliderIOS,
+  ScrollView,
+  AlertIOS
 } from 'react-native';
 var MOCKED_MOVIES_DATA = [
   {title: 'Title', year: '2015', posters: {thumbnail: 'http://i.imgur.com/UePbdph.jpg'}},
