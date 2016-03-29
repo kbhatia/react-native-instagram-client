@@ -1,1 +1,1 @@
-const INSTAGRAM_CLIENT_ID = 'Your client id';
+const INSTAGRAM_CLIENT_ID = 'your id';

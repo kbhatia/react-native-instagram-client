@@ -11,15 +11,13 @@ import React, {
   StyleSheet,
   Text,
   View,
-  TouchableOpacity,
-  SliderIOS,
-  ScrollView,
-  AlertIOS
+
 } from 'react-native';
-var MOCKED_MOVIES_DATA = [
-  {title: 'Title', year: '2015', posters: {thumbnail: 'http://i.imgur.com/UePbdph.jpg'}},
-];
-var REQUEST_URL = 'https://raw.githubusercontent.com/facebook/react-native/master/docs/MoviesExample.json';
+
+
+var REQUEST_URL = 'https://api.instagram.com/v1/media/search?access_token=your-token&lat=40.748817&lng=-73.985428&distance=5000'
+
+
 class instaportal extends Component {
   constructor(props) {
     super(props);
@@ -39,7 +37,7 @@ class instaportal extends Component {
       .then((response) => response.json())
       .then((responseData) => {
         this.setState({
-          dataSource: this.state.dataSource.cloneWithRows(responseData.movies),
+          dataSource: this.state.dataSource.cloneWithRows(responseData.tags),
           loaded: true,
         });
       })
